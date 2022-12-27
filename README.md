@@ -1,0 +1,2 @@
+# Food-Express
+Food Express is an android application which is designed to order the food online while traveling through a train. The food is delivered directly to his/her seat and cash-on-delivery (COD) process takes place between the customer and the person who delivers the food.
