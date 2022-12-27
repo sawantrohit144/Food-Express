@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "789281250301",
+    "firebase_url": "https://foodexpress-35f9d.firebaseio.com",
+    "project_id": "foodexpress-35f9d",
+    "storage_bucket": "foodexpress-35f9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789281250301:android:1df202b2296c7842b05794",
+        "android_client_info": {
+          "package_name": "com.yummy.foodonmytrain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789281250301-kjmk19d3q1dt9tm5si3holfece7a85uu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yummy.foodonmytrain",
+            "certificate_hash": "4494760389acf957e64cc2f0487e70f0eb60edd7"
+          }
+        },
+        {
+          "client_id": "789281250301-jlpdc375optnkim8ugk84sbcp5jmlpf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yummy.foodonmytrain",
+            "certificate_hash": "0ef5f5ef0acb66d329573d6d0eecde2b586aeafd"
+          }
+        },
+        {
+          "client_id": "789281250301-41jgiv6im5rtnjihvem07v4g9fh7lgie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yummy.foodonmytrain",
+            "certificate_hash": "f5d72b21956ae3a7d88c6bf9dfc7aaac496169ea"
+          }
+        },
+        {
+          "client_id": "789281250301-mfv3ec3h4m0vn7i1ft3l0pckf2ubvq3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEkY4Iyt-Ysbll3QPUnopf5_HsSouifLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789281250301-mfv3ec3h4m0vn7i1ft3l0pckf2ubvq3g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

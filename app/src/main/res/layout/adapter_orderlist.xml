@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtlayAdptOrderListNameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/secondaryDarkColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtAdptOrderListName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer Name"
+            android:textColorHint="@color/secondaryDarkColor"
+            android:textColor="@color/secondaryDarkColor"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtlayAdptOrderListNumberTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/secondaryDarkColor"
+        app:layout_constraintTop_toBottomOf="@+id/txtlayAdptOrderListNameTitle">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtAdptOrderListNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer Contact Number"
+            android:textColorHint="@color/secondaryDarkColor"
+            android:textColor="@color/secondaryDarkColor"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtlayAdptOrderListTrainIdTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="@color/secondaryDarkColor"
+        app:layout_constraintEnd_toStartOf="@+id/txtlayAdptOrderListSeatNoTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtlayAdptOrderListNumberTitle">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtAdptOrderListTrainNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/secondaryDarkColor"
+            android:textColor="@color/secondaryDarkColor"
+            android:hint="Train Number"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtlayAdptOrderListSeatNoTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/txtlayAdptOrderListTrainIdTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="@color/secondaryDarkColor"
+        app:layout_constraintTop_toBottomOf="@+id/txtlayAdptOrderListNumberTitle">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtAdptOrderListSeatNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seat Number"
+            android:textColorHint="@color/secondaryDarkColor"
+            android:textColor="@color/secondaryDarkColor"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:id="@+id/layAdptOrderListDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txtlayAdptOrderListSeatNoTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:id="@+id/layAdptOrderListItem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Tea/Coffee"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 X"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListTeaCoffeeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListTeaCoffeePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = 1680"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layAdptOrderListItem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layAdptOrderListItem1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Breakfast(Veg.)"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 X"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListBreakfastCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListBreakfastPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = 1680"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layAdptOrderListItem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layAdptOrderListItem2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Breakfast(Non-Veg.)"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50 X"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListBreakfastNonCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListBreakfastNonPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = 1680"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layAdptOrderListItem4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layAdptOrderListItem3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Meal(Veg)"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70 X"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListMealCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListMealPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = 1680"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layAdptOrderListItem5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layAdptOrderListItem4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Meal(Egg.Curry)"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80 X"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListMealEggCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListMealEggPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = 1680"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layAdptOrderListItem6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layAdptOrderListItem5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Meal(Chicken Curry)"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120 X"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListMealChickenCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListMealChickenPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = 1680"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layAdptOrderListItem7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layAdptOrderListItem6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Biryani(Veg) 350gm"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70 X"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListBiryaniCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListBiryaniPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = 1680"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layAdptOrderListItem8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layAdptOrderListItem7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Biryani(Egg) 350gm"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80 X"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListBiryaniEggCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListBiryaniEggPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = 1680"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layAdptOrderListItem9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layAdptOrderListItem7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Biryani(Chicken) 350gm"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 X"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListBiryaniChickenCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4"/>
+            <TextView
+                android:id="@+id/txtAdptOrderListBiryaniChickenPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = 1680"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/secondaryDarkColor"
+        app:layout_constraintTop_toBottomOf="@+id/layAdptOrderListDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/layAdptOrderListTotalBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/layAdptOrderListDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/txtAdptOrderListTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text=" 4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layAdptOrderListStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/layAdptOrderListTotalBill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/txtAdptOrderListStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text=" Pending"/>
+        <Button
+            android:id="@+id/btnAdptOrderListStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Mark Completed"/>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/txtAdptOrderListRatingAndFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:text="Rating/Feedback"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintTop_toBottomOf="@+id/layAdptOrderListStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

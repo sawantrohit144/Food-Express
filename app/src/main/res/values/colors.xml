@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#00BCD4</color>
+    <color name="colorAccent">#00BCD4</color>
+    <color name="colorTextDark">#FF2E2E2E</color>
+    <color name="overlaycolor">#5a000000</color>
+    <color name="buttoncolor">#00BCD4</color>
+    <color name="toolbarcolor">#00c4e6</color>
+
+    <color name="secondaryDarkColor">#4b636e</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="secondaryLightColor">#a7c0cd</color>
+
+    <color name="primaryTextColor">#ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>
